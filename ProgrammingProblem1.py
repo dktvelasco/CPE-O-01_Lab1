@@ -11,7 +11,7 @@ while True:
   
   try:
       print("Enter a set of numbers.")
-      print("ENTER ONE AT A TIME.")
+      print("ENTER NUMBERS ONE AT A TIME.")
       print("Press * to finalize.")
       var = True
       num_list = []
@@ -28,34 +28,34 @@ while True:
       print(num_list)
       print()
         
-      # calculate the median of the given list
+      # calculate the median
       def median(num_list):
           length = len(num_list)
-          if(length%2)==0):
+          if((length%2)==0):
               first = num_list[int((length/2))-1]
-              second = num_list[int((length/2)]
+              second = num_list[int((length/2))]
               i =(first+second)/2
               return i
           else:
               return num_list[length//2]
                                     
-      # calculate the mode of the given list
+      # calculate the mode
       def mode(num_list):
           return statistics.mode(num_list)
                                     
-      # calculate the average of the list
-      def mean(number_list):
+      # calculate the mean
+      def mean(num_list):
           return statistics.mean(num_list)
 
-       print("Median:" median(num_list))
-       print()
-       print("Mean:",mean(num_list))
-       print()
-       print("Mode:" mode(num_list))
-       print()
+      print("Median:", median(num_list))
+      print()
+      print("Mean:", mean(num_list))
+      print()
+      print("Mode:", mode(num_list))
+      print()
                                     
   except:
-       print("Please Input a valid number.")
+       print("Error! Please input a valid number.")
        print()
        continue
                                     
