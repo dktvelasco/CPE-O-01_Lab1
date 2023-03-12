@@ -10,14 +10,18 @@ with open(fileName, 'r') as file:
     lines = file.readlines()
     
 num_lines = len(lines)
+print()
 print(f"The file {fileName} contains {num_lines} lines.")
 
 while True:
+    print()
     line_num = int(input("Enter a line number (0 to quit): "))
     if line_num == 0:
         break
 
     elif line_num < 1 or line_num > num_lines:
+        print()
         print("Invalid line number. Please enter a line again.")
     else:
+        print()
         print(lines[line_num - 1])
