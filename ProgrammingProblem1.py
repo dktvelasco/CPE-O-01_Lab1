@@ -10,9 +10,11 @@ import statistics
 while True:
   
   try:
+      print()
       print("Enter a set of numbers.")
       print("ENTER NUMBERS ONE AT A TIME.")
       print("Press * to finalize.")
+      print()
       var = True
       num_list = []
       
@@ -24,10 +26,15 @@ while True:
           else :
               num = int(num)
               num_list.append(num)
+      print()
       print("Input List: ")
       print(num_list)
       print()
-        
+    
+      # calculate the mean
+      def mean(num_list):
+          return statistics.mean(num_list)
+      
       # calculate the median
       def median(num_list):
           length = len(num_list)
@@ -42,14 +49,10 @@ while True:
       # calculate the mode
       def mode(num_list):
           return statistics.mode(num_list)
-                                    
-      # calculate the mean
-      def mean(num_list):
-          return statistics.mean(num_list)
 
-      print("Median:", median(num_list))
-      print()
       print("Mean:", mean(num_list))
+      print()
+      print("Median:", median(num_list))
       print()
       print("Mode:", mode(num_list))
       print()
@@ -66,4 +69,5 @@ while True:
           continue
        if cont == "N":
           print("Process Ended.")
+          print()
           break
