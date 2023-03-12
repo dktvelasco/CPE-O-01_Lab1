@@ -62,6 +62,7 @@ while True:
   finally:
        cont = input("Continue? Y/N: ")
        if cont == "Y":
+          print()
           continue
        if cont == "N":
           print("Process Ended.")
