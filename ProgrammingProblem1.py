@@ -46,3 +46,23 @@ while True:
       # calculate the average of the list
       def mean(number_list):
           return statistics.mean(num_list)
+
+       print("Median:" median(num_list))
+       print()
+       print("Mean:",mean(num_list))
+       print()
+       print("Mode:" mode(num_list))
+       print()
+                                    
+  except:
+       print("Please Input a valid number.")
+       print()
+       continue
+                                    
+  finally:
+       cont = input("Continue? Y/N: ")
+       if cont == "Y":
+          continue
+       if cont == "N":
+          print("Process Ended.")
+          break
