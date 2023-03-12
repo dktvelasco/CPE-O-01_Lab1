@@ -4,3 +4,27 @@
 # Define these functions in a module named stats.py.
 # Also include a function named mean, which computes the average of a set of numbers.
 # Each function expects a list of numbers as an argument and returns a single number.
+
+import statistics
+
+while True:
+  
+  try:
+      print("Enter a set of numbers.")
+      print("ENTER ONE AT A TIME.")
+      print("Press * to finalize.")
+      var = True
+      num_list = []
+      
+      while (var == True):
+          num = input("Enter number: ")
+          if(num =='*'):
+            var = False
+            break
+          else :
+              num = int(num)
+              num_list.append(num)
+      print("Input List: ")
+      print(num_list)
+      print()
+        
