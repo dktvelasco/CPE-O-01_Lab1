@@ -8,3 +8,6 @@
 fileName = input("Enter filename: ")
 with open(fileName, 'r') as file:
     lines = file.readlines()
+    
+num_lines = len(lines)
+print(f"The file {fileName} contains {num_lines} lines.")
