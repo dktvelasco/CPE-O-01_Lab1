@@ -4,7 +4,7 @@
 # Actual line numbers range from 1 to the number of lines in the file.
 # If the input is 0, the program quits. Otherwise, the program prints the line associated with that number.
 
-
+print()
 fileName = input("Enter filename: ")
 with open(fileName, 'r') as file:
     lines = file.readlines()
@@ -17,7 +17,7 @@ while True:
     if line_num == 0:
         break
 
-        elif line_num < 1 or line_num > num_lines:
+    elif line_num < 1 or line_num > num_lines:
         print("Invalid line number. Please enter a line again.")
     else:
         print(lines[line_num - 1])
