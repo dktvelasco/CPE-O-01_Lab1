@@ -11,3 +11,10 @@ with open(fileName, 'r') as file:
     
 num_lines = len(lines)
 print(f"The file {fileName} contains {num_lines} lines.")
+
+while True:
+    line_num = int(input("Enter a line number (0 to quit): "))
+    if line_num == 0:
+        break
+
+        
