@@ -17,4 +17,7 @@ while True:
     if line_num == 0:
         break
 
-        
+        elif line_num < 1 or line_num > num_lines:
+        print("Invalid line number. Please enter a line again.")
+    else:
+        print(lines[line_num - 1])
